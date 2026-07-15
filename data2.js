@@ -1,0 +1,1 @@
+const currentMonth=new Date().getMonth()+1;allMarkets.forEach(m=>{m.status=!m.operating_months.length?'연중운영(요일확인)':m.operating_months.includes(currentMonth)?'운영중(이번달)':'휴장(비시즌)'});const operatingMarketsBase=allMarkets.filter(m=>m.status==='운영중(이번달)');
